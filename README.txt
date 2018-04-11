@@ -1,3 +1,5 @@
+For adding newsletter enable module tbwa_newsletter
+and go to tbwa_newsletter/newsletter
 
 CONTENTS OF THIS FILE
 ---------------------
