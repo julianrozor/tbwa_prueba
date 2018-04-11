@@ -1,0 +1,22 @@
+# Define the 'local' links for the module
+
+newsletter.settings_tab:
+  route_name: tbwa_newsletter.contact_settings
+  title: Settings
+  base_route: tbwa_newsletter.contact_settings
+
+newsletter.view:
+  route_name: entity.tbwa_newsletter.canonical
+  base_route: entity.tbwa_newsletter.canonical
+  title: View
+
+newsletter.page_edit:
+  route_name: entity.tbwa_newsletter.edit_form
+  base_route: entity.tbwa_newsletter.canonical
+  title: Edit
+
+newsletter.delete_confirm:
+  route_name:  entity.tbwa_newsletter.delete_form
+  base_route:  entity.tbwa_newsletter.canonical
+  title: Delete
+  weight: 10

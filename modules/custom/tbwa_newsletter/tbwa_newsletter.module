@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Contains Drupal\tbwa_newsletter\tbwa_newsletter.module.
+ */
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function tbwa_newsletter_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  //verified form edit
+
+}
+
+
+
+// function tbwa_newsletter_entity_query_alter(\Drupal\Core\Entity\Query\QueryInterface $query) {
+// }

@@ -1,0 +1,4 @@
+services:
+  country:
+    class: Drupal\tbwa_newsletter\servicesTbwa\getCountryService
+    arguments: []

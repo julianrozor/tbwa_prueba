@@ -1,0 +1,11 @@
+# add Permissions
+'delete newsletter entity':
+  title: Delete entity content.
+'add newsletter entity':
+  title: Add entity content
+'view newsletter entity':
+  title: View entity content
+'edit newsletter entity':
+  title: Edit entity content
+'administer newsletter entity':
+  title: Administer settings

@@ -1,0 +1,12 @@
+# Define the menu links for this module
+
+entity.tbwa_newsletter.collection:
+  title: 'Newsletter Listing'
+  route_name: entity.tbwa_newsletter.collection
+  description: 'List Newsletter'
+  weight: 10
+tbwa_newsletter.admin.structure.settings:
+  title: Newsletter Settings
+  description: 'Configure Newsletter entity'
+  route_name:  tbwa_newsletter.contact_settings
+  parent: system.admin_structure

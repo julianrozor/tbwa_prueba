@@ -1,0 +1,11 @@
+# All action links for this module
+
+tbwa_newsletter.contact_add:
+  # Which route will be called by the link
+  route_name: tbwa_newsletter.contact_add
+  title: ''
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.tbwa_newsletter.collection
+    - entity.tbwa_newsletter.canonical

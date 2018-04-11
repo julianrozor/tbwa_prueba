@@ -1,0 +1,15 @@
+name: TBWA newsletter
+type: module
+description: Administration Newsletter
+package: TBWA
+# core: 8.x
+# These modules are required by the tests, must be available at bootstrap time
+dependencies:
+  - drupal:options
+  - drupal:node
+
+# Information added by Drupal.org packaging script on 2017-07-02
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'tbwa'
+datestamp: 1499019545

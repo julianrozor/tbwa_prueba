@@ -1,0 +1,68 @@
+# This file brings everything together. Very nifty!
+
+# Route name can be used in several places; e.g. links, redirects, and local
+# actions.
+tbwa_newsletter.multistep_form:
+  path: '/tbwa/newsletter'
+  defaults:
+    _form: '\Drupal\tbwa_newsletter\Form\MultistepForm'
+    _title: 'Newsletter TBWA'
+  requirements:
+    _permission: 'access content'
+
+entity.tbwa_newsletter.canonical:
+  path: '/tbwa_newsletter/{tbwa_newsletter}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the contact entity
+    _entity_view: 'tbwa_newsletter'
+    _title: 'Newsletter Content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'tbwa_newsletter.view'
+
+entity.tbwa_newsletter.collection:
+  path: '/tbwa_newsletter/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 'tbwa_newsletter'
+    _title: 'Newsletter List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'view tbwa entity'
+
+tbwa_newsletter.contact_add:
+  path: '/tbwa_newsletter_settings/add'
+  defaults:
+  # Calls the form.add controller, defined in the contact entity.
+    _entity_form: tbwa_newsletter.add
+    _title: 'Add Newsletter'
+  requirements:
+   # _permission: 'add tbwa entity'
+   _entity_create_access: 'tbwa_newsletter'
+
+entity.tbwa_newsletter.edit_form:
+  path: '/tbwa_newsletter/{tbwa_newsletter}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the contact entity.
+    _entity_form: tbwa_newsletter.edit
+    _title: 'Edit Newsletter'
+  requirements:
+    _entity_access: 'tbwa_newsletter.edit'
+
+entity.tbwa_newsletter.delete_form:
+  path: '/newsletter/{tbwa_newsletter}/delete'
+  defaults:
+    _entity_form: tbwa_newsletter.delete
+    _title: 'Delete Newsletter'
+  requirements:
+    _entity_access: 'tbwa_newsletter.delete'
+
+tbwa_newsletter.contact_settings:
+  path: '/admin/structure/tbwa_newsletter_settings'
+  defaults:
+    _form: '\Drupal\tbwa_newsletter\Form\NewsletterSettingsForm'
+    _title: 'Newsletter Settings'
+  requirements:
+    _permission: 'administer tbwa entity'
+
+

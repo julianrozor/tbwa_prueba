@@ -1,7 +1,0 @@
-tbwa.multistep_form:
-  path: 'tbwa/newsletter'
-  defaults:
-    _form: '\Drupal\tbwa\Form\MultistepForm'
-    _title: 'Newsletter TBWA'
-  requirements:
-    _permission: 'access content'

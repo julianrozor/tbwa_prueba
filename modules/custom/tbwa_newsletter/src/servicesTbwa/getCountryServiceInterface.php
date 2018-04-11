@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\tbwa\servicesTbwa;
+namespace Drupal\tbwa_newsletter\servicesTbwa;
 
 /**
  * Interface AccountInterface.
